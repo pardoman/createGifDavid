@@ -1788,8 +1788,11 @@ AnimatedGIF.prototype = {
         this.generatingGIF = false;
 
         if (utils.isFunction(callback)) {
-            bufferToString = this.bufferToString(buffer);
-            gif = 'data:image/gif;base64,' + utils.btoa(bufferToString);
+            //bufferToString = this.bufferToString(buffer);
+            //gif = 'data:image/gif;base64,' + utils.btoa(bufferToString);
+
+            var gifBlob = new Blob(  [new Uint8Array(buffer)] , {type: 'image/gif'});
+            gif = URL.createObjectURL(gifBlob);
 
             callback(gif);
         }
