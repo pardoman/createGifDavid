@@ -11,3 +11,6 @@ None / Nada
 - Wait...
 - Right click on GIF -> `Save As`
 - Send it to David and tell him how great of a chef he is!
+
+## Result
+By default, it generates a 20MB gif. You can check it out here: https://giphy.com/gifs/PoCGLoTS8jAw19ePWJ
